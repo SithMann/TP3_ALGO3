@@ -237,10 +237,14 @@ static int post_supprimer(t_arn s){
 			} else {
 				if(couleur(sad(f)) == NOIR){
 					fprintf(stderr, "cas 2c\n");
-					// TODO
+					rotation_droite(f);
+					arn_modif_couleur(f,ROUGE);
+					arn_modif_couleur(g,NOIR);
 				}
 				fprintf(stderr, "cas 2b\n");
-				// TODO
+					rotation_gauche(f);
+					arn_modif_couleur(f,ROUGE);
+					arn_modif_couleur(g,NOIR);
 				break;
 			}
 		} else { 
